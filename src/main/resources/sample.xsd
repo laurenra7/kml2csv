@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/kml/2.2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="kml" type="ns:kmlType" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+  <xs:complexType name="ExtendedDataType">
+    <xs:sequence>
+      <xs:element type="ns:DataType" name="Data" maxOccurs="unbounded" minOccurs="0" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IconStyleType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="color"/>
+      <xs:element type="xs:string" name="scale"/>
+      <xs:element type="ns:IconType" name="Icon" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StyleType">
+    <xs:sequence>
+      <xs:element type="ns:IconStyleType" name="IconStyle" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="kmlType">
+    <xs:sequence>
+      <xs:element type="ns:DocumentType" name="Document" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IconType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="href"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PlacemarkType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="placename"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="styleUrl"/>
+      <xs:element type="ns:ExtendedDataType" name="ExtendedData" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+      <xs:element type="ns:PointType" name="Point" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DataType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="value"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="dataname" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="PointType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="coordinates"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="docname"/>
+      <xs:element type="ns:PlacemarkType" name="Placemark" maxOccurs="unbounded" minOccurs="0" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+      <xs:element type="ns:StyleType" name="Style" maxOccurs="unbounded" minOccurs="0" xmlns:ns="http://www.opengis.net/kml/2.2"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,14 @@
+
+# Directories to ignore #
+.idea
+target
+src/main/resources/samples
+
+# Files to ignore #
+*.iml
+*.class
+
+
+# Package Files #
+*.jar
+

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+    <Document>
+        <name>Neighborhood Flags 2016</name>
+        <Placemark>
+            <name>3325 Alexander</name>
+            <description><![CDATA[Latitude: 41.046642<br>Longitude: -112.254508<br>House Number: 3456<br>Street: North Happy Lane<br>Family Name: Leghorn<br>Full Name: Leghorn, Foghorn & Prissy <br>Household Type: Primary<br>Flag 2016?: DONATED<br>Flag Location: ]]></description>
+            <styleUrl>#icon-960-3F5BA9</styleUrl>
+            <ExtendedData>
+                <Data name='Latitude'>
+                    <value>41.046642</value>
+                </Data>
+                <Data name='Longitude'>
+                    <value>-112.254508</value>
+                </Data>
+                <Data name='House Number'>
+                    <value>3456.0</value>
+                </Data>
+                <Data name='Street'>
+                    <value>North Happy Lane</value>
+                </Data>
+                <Data name='Family Name'>
+                    <value>Leghorn</value>
+                </Data>
+                <Data name='Full Name'>
+                    <value>Leghorn, Foghorn &amp; Prissy </value>
+                </Data>
+                <Data name='Household Type'>
+                    <value>Primary</value>
+                </Data>
+                <Data name='Flag 2016?'>
+                    <value>DONATED</value>
+                </Data>
+                <Data name='Flag Location'>
+                    <value></value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>-112.254508,41.046642,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Style id='icon-959-FFFFFF'>
+            <IconStyle>
+                <color>ffFFFFFF</color>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+    </Document>
+</kml>
